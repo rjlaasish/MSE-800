@@ -1,7 +1,7 @@
 # Class Projects
 
 
-## Week One
+## Week One (3-4 August 2025)
 
 ### activity-1.py
 A factorial calculator that uses a while loop. It asks you for a number and calculates its factorial. It also handles negative numbers and invalid inputs too.
