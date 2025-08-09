@@ -1,7 +1,7 @@
 # Class Projects
 
 
-## Week One (3-4 August 2025)
+## 1. Week One (3-4 August 2025)
 
 ### activity-1.py
 A factorial calculator that uses a while loop. It asks you for a number and calculates its factorial. It also handles negative numbers and invalid inputs too.
@@ -20,6 +20,29 @@ python week-1/activity-1.py  #  Factorial calculator
 python week-1/activity-2.py  # Temperature analysis
 python week-1/activity-3.py  # Rainfall analysis
 ```
-
 You'll need Python and NumPy installed (`pip install numpy`).
+
+<br>
+
+ _____
+ _____
+
+<br>
+
+## 2. Week Two (9-10 August 2025)
+
+### word-guessing-game.py
+A simple word guessing game where you guess letters one by one to reveal a hidden word. You have 3 lives and need to guess all letters correctly to win. Features input validation and game state tracking.
+
+### word-guessing-game-in-class.py
+An improved version of the word guessing game using object-oriented programming with a `WordGuessingGame` class. You get 5 lives and the game has better input handling and cleaner code structure.
+
+
+## How to run them
+Just open your terminal and run:
+```bash
+python week-2/word-guessing-game.py         # Simple word guessing game
+python week-2/word-guessing-game-in-class.py # OOP word guessing game
+```
+
 
