@@ -1,0 +1,50 @@
+Design a database for YB college:
+Project scope (short paragraph)
+Write a story that defines the purpose and scope of the database. Describe the main entities (e.g., students, lecturers, etc).
+Entities and EER diagram
+List all entities with brief descriptions of their roles and attributes (e.g., Student, Course, Class, Lecturer, etc).
+Table design
+State how many tables are required after mapping the EER to a relational schema.
+
+
+
+
+
+a. YB college has different courses available to enroll. In each course different student can enroll.
+   For each course, there are different classes available.
+   Each class has different lectures assigned to it.
+
+b. Entities:
+   Student, Course, Class, Lecturer, Student_Course
+   1. Student
+        -Student_ID (PK)
+        -Name
+        -Email
+        -Phone
+        -dob
+    2. Course
+        - course_id (PK)
+        - Name
+        - Duration
+        - credits
+    3. Class
+        -Class_ID (PK)
+        -Course_ID (FK)
+        -Class_Name
+        -Schedule
+        -Room_Number
+        -Lecturer_ID (FK)
+    4. Lecturer
+        -Lecturer_ID (PK)
+        -Name
+        -Email
+        -Department
+        -Phone
+
+
+
+
+c. 5 tables,
+   Student, Course, Class, Lecturer
+
+

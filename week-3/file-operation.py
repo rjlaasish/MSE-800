@@ -12,17 +12,24 @@ class FileOperation:
         return file
     
     def read_file(self):
-        data = open(self.filePath,mode='r')
+        data = open(self.filePath,mode=self.mode)
         lines = data.readlines() 
         for line in lines:
-            print(line[0:-1]) 
+            print(line[:]) 
         data.close()
     
     def write_file(self,write_content):
-        with open(self.filePath,'w') as file:
+        with open(self.filePath,self.mode) as file:
             file.write(write_content)
+            file.close()
         print("Content written to file successfully.")
         
+    def count_words_in_file(self):
+        with open(self.filePath,self.mode) as file:
+            content = file.read()
+            words = content.split()
+            print(f"Total words in your file is: {len(words)}")
+            file.close()
         
         
 
@@ -33,10 +40,11 @@ def main():
     print("1. Open File")
     print("2. Read File")
     print("3. Write to File")
+    print("4. Count words in file")
     
-    choice = int(input("Enter your choice (1/2/3): "))
+    choice = int(input("Enter your choice (1/2/3/4): \n"))
     
-    mode = 'r' if choice in [1, 2] else 'w'
+    mode = 'r' if choice in [1, 2, 4] else 'w'
     
     file_op = FileOperation(file_path, mode)
     
@@ -51,6 +59,8 @@ def main():
         case 3:
             content = input("Enter content to write to the file: ")
             file_op.write_file(content)
+        case 4:
+            file_op.count_words_in_file()
         case _:
             print("Invalid choice. Please select 1, 2, or 3.")
 

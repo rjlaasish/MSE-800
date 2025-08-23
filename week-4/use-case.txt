@@ -1,0 +1,36 @@
+
+Week 4 - Activity 1: Design use case diagram 
+Step 1: Write the number of actors and use cases for your college project, defining the scope of the project in the same way as the activity completed in Week 3 for your college.
+
+Actors
+    a. Student
+    b. Lecturer
+    c. Admin
+
+Use Cases:
+
+    For Student
+        a. Register and update profile.
+        b. Enroll in courses.
+        c. View timetable / class schedule.
+        d. Submit assignments.
+        e. View grades and feedback.
+
+    For Lecturer
+        a. Create and update courses.
+        b. Schedule and manage classes.
+        c. Upload teaching materials.
+        d. Grade assignments.
+        e. Provide feedback to students.
+
+    For Administrator
+        a. Manage student and lecturer records.
+        b. Approve course offerings.
+        c. Allocate classrooms and time slots.
+        d. Generate reports (enrollment, performance, attendance).
+
+Step 2:
+in ./ diagram.jpeg
+
+Step 3;
+in ./ diagram.jpeg
