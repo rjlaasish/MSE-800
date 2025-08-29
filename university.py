@@ -7,7 +7,7 @@ class Person:
     def display(self):
         print(f"Name: {self.name}")
     
-# Subclass
+# Staff base class
 class Staff:
     def __init__(self):
         pass
