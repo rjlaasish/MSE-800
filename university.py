@@ -9,8 +9,9 @@ class Person:
     
 # Staff base class
 class Staff:
-    def __init__(self):
-        pass
+    def __init__(self, tax_code, department):
+        self.tax_code = tax_code
+        self.department = department
 
 # Student inherits Person Attrs.
 class Student(Person): 
