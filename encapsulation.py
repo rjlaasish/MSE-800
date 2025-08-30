@@ -44,3 +44,11 @@ print(db.db_name)     # Public - accessible
 print(db._user)     # Protected - accessible but not recommended this way
 # print(db.__password)  # Error! Private attribute, can't access directly
 
+
+"""
+Value Update
+"""
+db.db_name = "ProdDB" # do able
+db._user = "root" # do able but not recommended
+# db.__password = "p4ssw3rd" # not possible errrrrrrr
+
