@@ -33,14 +33,15 @@ class TestAnalyzer:
         return count
 
     def analyze(self):
+        print(f"Word is: {self.data}")
         print(f"Total length is {self.get_length()}")
         print(f"Total uppercases are {self.count_uppercase()}")
         print(f"Total digit are {self.count_digits()}")
-        print(f"Total special chars(not a letter or digit) {self.count_special_characters()}")
+        print(f"Total special chars(not a letter or digit) {self.count_special_characters()}\n")
 
 
 if __name__ == "__main__":
-    analyzer1 = TestAnalyzer("Hello World!")
+    analyzer1 = TestAnalyzer('Hello World')
     analyzer1.analyze()
     analyzer2 = TestAnalyzer(["Professional", "Software", "Engineering"])
     analyzer2.analyze()
