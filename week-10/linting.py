@@ -35,8 +35,8 @@ class TestAnalyzer:
     def analyze(self):
         print(f"Total length is {self.get_length()}")
         print(f"Total uppercases are {self.count_uppercase()}")
-        print(f"Total digit are {self.count_uppercase()}")
-        print(f"Total special chars(not a letter or digit) {self.count_uppercase()}")
+        print(f"Total digit are {self.count_digits()}")
+        print(f"Total special chars(not a letter or digit) {self.count_special_characters()}")
 
 
 if __name__ == "__main__":
